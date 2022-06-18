@@ -1,0 +1,73 @@
+h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 40px;
+  color: #212353;
+}
+
+.text {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.wifi_credentials,.wifi_form,.wifi_status,.stepper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wifi_input {
+  width: 100%;
+  height: 25px;
+}
+
+.wifi_submit_button {
+  margin-top: 10px;
+  padding: 5px 25px;
+  background-color: #34495E;
+  color: #D6DBDF;
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 160%;
+  border-radius: 5px;
+  border: none;
+}
+
+.slider_y {
+  width: 175px;
+  height: 15px;
+  transform: rotate(270deg);
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+.slider_y_input {
+  width: 45px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: 265px; 
+}
+
+.slider_x {
+  width: 175px;
+  height: 15px;
+}
+
+.slider_x_input {
+  width: 45px;
+  height: 25px;
+  margin-left: 130px; 
+}
+
+.img_of_telescope {
+  width: 170px;
+  height: 170px;
+  margin-top: -225px;
+}
+
+.wifi_submit_button:hover {
+    background-color: #AEB6BF;
+}

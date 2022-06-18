@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ARSZO</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+  <link rel = "icon" type = "image/png" href = "favicon.png">
+  <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity = "sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin = "anonymous">
+</head>
+<body>
+  <div class="wifi_status" id = "wifi_status_id" style="display: none;">
+    <h1>Wifi connected</h1>
+    <h4 class="text" id = "wifiStaSsid">Connected to SSID: </h4>
+    <h4 class="text" id = "wifiStaIp">Local Host IP: </h4>
+    <h4 class="text" id = "wifiApSsid">My SSID: teleLoop</h4>
+    <h4 class="text" id = "wifiApPass">My PASS: loopedtele</h4>
+    <button class = "wifi_submit_button" onclick = "submitSWifiReset()">Reset</button>
+  </div>
+  <div class = "wifi_credentials" id = "wifi_credentials_id">
+    <h1>Wifi connect</h1>
+    <form class = "wifi_form">
+      <label class = "text" for = "ssid">Ssid of wifi:</label>
+      <input class = "wifi_input" type = "text" id = "ssid" name="ssid">
+      <label class = "text" for = "pass">Password:</label>
+      <input class = "wifi_input" type = "text" id = "pass" name="pass">
+    </form>
+    <button class = "wifi_submit_button" onclick = "submitForm()">Submit</button>
+  </div>
+  <div class="stepper">
+    <h1>Controll Stepper's</h1>
+    <input class = "slider_y"         type = "range"     id = "range_input_y"  min = "-90"   max = "90"   value = 0  onchange = "submitYInput(this.value);">
+    <input class = "slider_y_input"   type = "number"    id = "y_input"        min = "-90"   max = "90"   value = 0  onchange = "submitYInput(this.value);">
+    <input class = "slider_x"         type = "range"     id = "range_input_x"  min = "-180"  max = "180"  value = 0  onchange = "submitXInput(this.value);">
+    <input class = "slider_x_input"   type = "number"    id = "x_input"        min = "-180"  max = "180"  value = 0  onchange = "submitXInput(this.value);">
+    <object id = "svg_img_tele" class = "img_of_telescope" type="image/svg+xml" data="tele.svg" > </object>
+  </div>
+</body>
+<script src = "script.js"></script>
+</html>
